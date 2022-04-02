@@ -1,0 +1,25 @@
+{%extends"./includs/base.html%}
+{% block title %}
+    Create Course
+{% endblock %}
+
+{% block content %}
+    <h2 class="ui dividing header">Create Courses</h2>
+
+    <!-- Describing the type of request using method -->
+    <form action="" method="POST"> 
+        
+    <8form>class="ui equal width form"method='POST'
+    </form>
+
+    <a href="{{ url_for('index_courses') }}">Go Back to Courses</a>
+
+{% endblock %}
+if request.method == "POST":
+        c_name = request.form['courseName']
+        start_date = date(year=int(request.form['start-year']), 
+        month=int(request.form['start-month']), day=int(request.form['start-day']))
+        end_date = date(year=int(request.form['end-year']), 
+        month=int(request.form['end-month']), day=int(request.form['end-day']))
+        instructor = request.form['instructor']
+        description = request.form['description']

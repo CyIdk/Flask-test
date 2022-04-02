@@ -1,0 +1,15 @@
+{% extends "./includes/base.html" %}
+
+{% block title %}
+My Shopee Site
+{% endblock %}
+
+{% block content %}
+
+<h1 class="ui center aligned header" >Welcome to My Shopee Site</h1>
+<h2 class="ui header" ></h2>
+<a class="ui header" href="{{ url_for('index_products') }}">
+    List of Products
+</a>
+
+{% endblock %}
